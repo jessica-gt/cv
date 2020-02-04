@@ -211,6 +211,7 @@ hr {
 .Port p {
 	text-align: center;
 	margin-bottom: 0;
+	font-size: 18px;
 }
 
 /* footer */
@@ -255,4 +256,32 @@ footer {
 
 .CR {
 	text-align:center;
+}
+
+/*up*/
+
+.up {
+	position:fixed;
+	bottom:0px;
+	right:50px;
+	background: url('images/scroll.png') no-repeat;
+	background-size: cover;
+}
+
+.up p {
+	margin-bottom: 0;
+}
+
+.up a {
+	margin:20px 20px 5px 20px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color:black;
+}
+
+.up a:hover {
+	color:blue;
 }
