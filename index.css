@@ -128,8 +128,19 @@ hr {
 	align-items:center;
 }
 
-.comp img {
+.comp span {
+	height:35px;
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.check {
 	width:30px;
+}
+
+.logo {
+	height:25px;
 }
 
 /* outils */
@@ -144,8 +155,11 @@ hr {
 	align-items:center;
 }
 
-.outils img {
-	width:30px;
+.outils span {
+	height:35px;
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 /* equipment */
