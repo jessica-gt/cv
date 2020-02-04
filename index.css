@@ -131,7 +131,7 @@ hr {
 .comp span {
 	height:35px;
 	display:flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: flex-end;
 }
 
@@ -158,7 +158,7 @@ hr {
 .outils span {
 	height:35px;
 	display:flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: flex-end;
 }
 
