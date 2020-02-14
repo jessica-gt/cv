@@ -9,6 +9,7 @@ body {
 	font-size: 18px;
 	font-family: "Cinzel";
 	background:url('images/background2.png');
+	cursor:url('images/pointer/featherpenpointer.cur'), help;
 }
 
 .container {
@@ -49,6 +50,7 @@ header {
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	cursor:url('images/pointer/Handwriting.cur'), default;
 }
 
 .nav h1 {
@@ -64,6 +66,7 @@ header {
 .nav a {
 	text-decoration:none;
 	color:white;
+	cursor:url('images/pointer/Handwriting.cur'), default;
 }
 
 .title {
@@ -200,7 +203,7 @@ hr {
 }
 
 .Port img:hover{
-	opacity:0.7;
+	opacity:0.5;
 }
 
 .Port ul {
@@ -218,8 +221,9 @@ hr {
 .Port a {
 	display:flex;
 	justify-content: center;
-	background-color: blue;
+	background-color: #005aff;
 	width:90%;
+	cursor:url('images/pointer/Handwriting.cur'), default;
 }
 
 .Port p {
@@ -251,6 +255,7 @@ footer {
 	text-decoration: none;
 	color:black;
 	font-size: 25px;
+	cursor: url('images/pointer/featherpenhelppointer.cur'), help;
 }
 
 .contact a:hover {
@@ -289,7 +294,7 @@ footer {
 }
 
 .up p {
-	margin-bottom: 0;	
+	margin-bottom: 0;
 }
 
 .up a {
@@ -300,6 +305,7 @@ footer {
 	justify-content: center;
 	text-decoration: none;
 	color:black;
+	cursor:url('images/pointer/Handwriting.cur'), default;
 }
 
 .up a:hover {
@@ -328,4 +334,9 @@ footer {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover { 
+}
+
+html{
+
+	cursor:url('images/pointer/Handwriting.cur'), default;
 }
