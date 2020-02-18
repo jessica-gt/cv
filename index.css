@@ -80,6 +80,16 @@ header {
 	height:160px;
 }
 
+/* mouse*/
+#pointer, #pointer2, #pointer3, #pointer4, #pointer5, #pointer6, #pointer7, #pointer8, #pointer9, #pointer10{
+	background-color: midnightblue;
+	width: 2px;
+	height:2px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
 /* Présentation */
 
 .aboutMe ul {
@@ -176,13 +186,16 @@ hr {
 }
 
 .Exp ul {
-	border:1px black solid;
+	/*border-bottom:1px black solid;*/
+	background:url('images/ligneb.png') bottom, url('images/lignel.png') left, url('images/ligner.png') right, url('images/lignet.png') top;
+	background-repeat: no-repeat;
+	background-size: 95% , 5% 95%, 5% 95%, 95%;
 	list-style: none;
 	height:500px;
 	display:flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	padding:5px;
+	padding:5%;
 }
 
 .Exp li {
