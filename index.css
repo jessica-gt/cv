@@ -177,10 +177,6 @@ hr {
 
 /* equipment */
 
-.equipment {
-	display:flex;
-}
-
 .Exp {
 	width:100%;
 }
@@ -353,3 +349,26 @@ html{
 
 	cursor:url('images/pointer/Handwriting.cur'), default;
 }
+
+/* scroll magic */
+.digit {
+		opacity: 0;
+		-webkit-transform: translateX(-40px);
+			 -moz-transform: translateX(-40px);
+				-ms-transform: translateX(-40px);
+				 -o-transform: translateX(-40px);
+						transform: translateX(-40px);
+		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+	}
+	.digit.visible {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}

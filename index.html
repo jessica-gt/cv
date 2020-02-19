@@ -6,10 +6,15 @@
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/ec261f7e5f.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/ec261f7e5f.js" crossorigin="anonymous"></script> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 	</head>
-	<body>
-
+	<body id='container'>
 		<header id='top'>
 			<div class="nav">
 				<ul class="puce">
@@ -24,15 +29,15 @@
 			</div>
 		</header>
 
-		<div class="container">
-			<div class="aboutMe" id="presentation">
+		<div class="container" id="reveal-elements digit">
+			<div class="aboutMe digit" id="presentation">
 				<ul>
 					<li>Nom: <span>GRAMMONT Jessica</span></li>
 					<li>Métier: <span>Développeuse Web</span></li>
 				</ul>
 			</div>
 			<hr>
-			<div class="other" id="competences">
+			<div class="other digit" id="competences">
 				<div class="comp">
 					<h2>Compétences</h2>
 					<ul>
@@ -58,8 +63,8 @@
 					</ul>
 				</div>
 			</div>
+			<div class="equipment digit">
 			<hr>
-			<div class="equipment">
 				<div class="Exp" id="Exp">
 					<h2>Expériences</h2>
 					<ul>
@@ -72,12 +77,15 @@
 					</ul>
 				</div>
 			</div>
-			<hr>
-			<div class="Port" id="Port">
+
+			<div class="Port digit" id="Port">
+				<hr>
+				<!--div pour mettre le start du scroll magic des images du portfolio dans le js -->
+				<div class="spacer s1" id="trigger"></div>
 				<h2>Portfolio</h2>
 					<ul>
-						<li><a href='https://jessica-gt.github.io/Obsidian/' target="_blank"><img src="images/obsidian.png" alt="obsidian"></a><p>Site Obsidian</p><p>Création d'un site de musique utilisant Music Theme WordPress en code HTML/CSS</p></li>
-						<li><a href='https://jessica-gt.github.io/takoyaclick/' target="_blank"><img src="images/takoyaclick.png" alt="takoyaclick"></a><p>Site Takoyaclick</p><p>Création d'un "idle game" sur le theme des Takoyakis</p></li>
+						<li><a href='https://jessica-gt.github.io/Obsidian/' target="_blank" class='animate'><img src="images/obsidian.png" alt="obsidian"></a><p>Site Obsidian</p><p>Création d'un site de musique utilisant Music Theme WordPress en code HTML/CSS</p></li>
+						<li><a href='https://jessica-gt.github.io/takoyaclick/' target="_blank" class='animate'><img src="images/takoyaclick.png" alt="takoyaclick"></a><p>Site Takoyaclick</p><p>Création d'un "idle game" sur le theme des Takoyakis</p></li>
 					</ul>
 			</div>
 			<hr>
@@ -97,5 +105,9 @@
 				</div>
 			</footer>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src='index.js'></script>
 	</body>
 </html>
