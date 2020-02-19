@@ -9,7 +9,7 @@ body {
 	font-size: 18px;
 	font-family: "Cinzel";
 	background:url('images/background2.png');
-	cursor:url('images/pointer/featherpenpointer.cur'), help;
+	cursor:url('images/pointer/featherpenpointer.cur'), default;
 }
 
 .container {
@@ -371,4 +371,12 @@ html{
 				-ms-transform: none;
 				 -o-transform: none;
 						transform: none;
+	}
+	.digit a{
+		pointer-events: none;
+		cursor:url('images/pointer/featherpenpointer.cur'), default;
+	}
+	.digit.visible a{
+		pointer-events: auto;
+		cursor:url('images/pointer/Handwriting.cur'), default;
 	}
