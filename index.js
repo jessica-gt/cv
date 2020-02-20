@@ -8,7 +8,7 @@ var tween = TweenMax.to(".animate", 0.6, {rotationY: 360});
 // build scene
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 200, triggerHook: 0.7})//=>changer duration pour changer position end
 				.setTween(tween)
-				.addIndicators() // add indicators (requires plugin)
+				//.addIndicators() // add indicators (requires plugin)
 				.addTo(controller);
 
 //ecrit
@@ -22,6 +22,6 @@ var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 200, tr
 								triggerHook: 0.7,
 							})
 							.setClassToggle(revealElements[i], "visible") // add class toggle
-							.addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
+							//.addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
 							.addTo(controller);
 		}
